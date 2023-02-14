@@ -2,7 +2,7 @@ import os
 os.system("cls")
 
 
-eleccion = input("Ingrese su opción: ")
+eleccion = input("Ingrese su opción perro hp: ")
 
 if eleccion == "Papel" or eleccion == "papel":
     print("Computador elije Tijeras, gana computador :)")
