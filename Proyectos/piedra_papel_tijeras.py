@@ -12,3 +12,7 @@ elif eleccion == "Tijeras" or eleccion == "tijeras":
     print("Computadora elige Piedra. Gana la computadora :)")
 else:
     print("Ingresa una opción correta")
+
+
+variable = "5"
+print(f"El numero de incidentes es {variable}")
