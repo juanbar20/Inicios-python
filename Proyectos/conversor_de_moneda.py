@@ -1,4 +1,3 @@
-
 import os
 
 os.system("cls")
@@ -49,16 +48,16 @@ elif conversor == 2:
 
     if opcion == 1:
         
-        dolares = int(input("¿Cuantos dolares tienes?: "))
-        pesos = ARS / dolares
-        print(f"Tienes {pesos} pesos argentinos")
+        dolares = int(input("¿Cuantos pesos argentinos tienes?: "))
+        pesos = dolares / ARS
+        print(f"Tienes {pesos} dolares")
     elif opcion == 2:
-        dolares = int(input("¿Cuantos dolares tienes?: "))
-        pesos = dolares * COP
-        print(f"Tienes {dolares} pesos colombianos")
+        dolares = int(input("¿Cuantos pesos colombianos tienes?: "))
+        pesos = dolares / COP
+        print(f"Tienes {dolares} dolares")
     elif opcion == 3:
-        dolares = int(input("¿Cuantos dolares tienes?: "))
-        pesos = dolares * MXN
+        dolares = int(input("¿Cuantos Pesos mexicanos tienes?: "))
+        pesos = dolares / MXN
         print(f"Tienes {dolares} pesos mexicanos")
     else:
         print("Elige una opción correcta")
