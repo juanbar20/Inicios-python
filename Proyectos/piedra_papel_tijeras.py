@@ -1,8 +1,10 @@
 eleccion = "Papel"
 
 if eleccion == "Papel":
-    pass
+    print("Computador elije tijeras, gana computador :)")
 elif eleccion == "Piedra":
-    pass
-elif eleccion == "tijeras";
-    pass
+    print("Computadora elige papel. Gana la computadora :) ")
+elif eleccion == "tijeras":
+    print("Computadora elige piedra. Gana la computadora :)")
+else:
+    print("Ingresa una opción corrcta")
