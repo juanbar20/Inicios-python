@@ -11,7 +11,7 @@ print("Bienvenido al conversor de monedas definitivo")
 print("Elige una de las siguientes opciones de conversión: ")
 print("1. Dolar a Pesos ")
 print("2. Pesos a Dolar ")
-conversor = int(input("Elija la opcion que prefieras"))
+conversor = int(input("Elija la opcion que prefieras: "))
 
 if conversor == 1:
     print("Elige una de las siguientes opciones de conversión: ")
@@ -54,11 +54,11 @@ elif conversor == 2:
     elif opcion == 2:
         dolares = int(input("¿Cuantos pesos colombianos tienes?: "))
         pesos = dolares / COP
-        print(f"Tienes {dolares} dolares")
+        print(f"Tienes {pesos} dolares")
     elif opcion == 3:
         dolares = int(input("¿Cuantos Pesos mexicanos tienes?: "))
         pesos = dolares / MXN
-        print(f"Tienes {dolares} pesos mexicanos")
+        print(f"Tienes {pesos} dolares")
     else:
         print("Elige una opción correcta")
 else:
