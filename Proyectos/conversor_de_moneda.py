@@ -9,8 +9,7 @@ def conversor(moneda):
 def conversor_pesos(moneda1):
     dolares = int(input("¿Cuanto dinero tienes?: "))
     pesos = dolares / ARS
-    print(f"Tienes {pesos} dolares")
-
+    return pesos
 USD = 1
 ARS = 290
 COP = 4600
@@ -31,11 +30,14 @@ if conversor == 1:
     opcion = int(opcion)
 
     if opcion == 1:
-        conversor(ARS)
+        pesos_argentinos = conversor(ARS)
+        print(f"Tienes {pesos_argentinos} dolares")
     elif opcion == 2:
-        conversor(COP)
+        pesos_colombianos = conversor(COP)
+        print(f"Tienes {pesos_colombianos} dolares")
     elif opcion == 3:
-        conversor(MXN)
+        pesos_mexicanos = conversor(MXN)
+        print(f"Tienes {pesos_mexicanos} dolares")
     else:
         print("Elige una opción correcta")
 
