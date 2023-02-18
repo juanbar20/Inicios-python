@@ -1,3 +1,6 @@
+import os
+os.system("cls")
+
 i = 0
 
 while(i < 5):
