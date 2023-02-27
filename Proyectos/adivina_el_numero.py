@@ -10,10 +10,10 @@ while(intentos > 0):
     eleccion = int(input("Elige el numero: "))
     if eleccion > numero:
         print("Ell numero es mas pequeño")
-        intenos =- 1
+        intenos = intentos - 1
     elif eleccion < numero:
         print("El numero es mas grande")
-        intenos =- 1
+        intenos = intentos - 1
     else:
         print("Ganaste")
         break
