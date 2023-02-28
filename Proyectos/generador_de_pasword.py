@@ -9,7 +9,6 @@ numeros = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 simbolos = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '+', '=', '<', '>', '?']
 
 caracteres = letras_mayusculas + letras_minusculas + numeros + simbolos
-print(caracteres)
 
 tamano = int(input("Cuantos caracteres deberia tener tu contraseña?"))
 
@@ -18,13 +17,14 @@ segundo_caracter = random.choice(letras_mayusculas)
 tercer_caracter = random.choice(numeros)
 cuarto_caracter = random.choice(simbolos)
 
-print(primer_caracter)
-print(segundo_caracter)
-print(tercer_caracter)
-print(cuarto_caracter)
-
 contrasena = [primer_caracter, segundo_caracter, tercer_caracter, cuarto_caracter]
 
-for i in range(tamaño - 4):
-    caracter = random.choices(caracteres)
-    contrasena.append()
+for i in range(tamano - 4):
+    caracter = random.choice(caracteres)
+    contrasena.append(caracter)
+
+
+random.shuffle(contrasena)
+contrasena = "".join(contrasena)
+
+print(contrasena)
