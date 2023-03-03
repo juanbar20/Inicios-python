@@ -5,6 +5,8 @@ import random
 
 print("Wenas")
 
+
+
 eleccion = int(input(" 1: Piedra \n 2: Papel \n 3: Tijeras   \nIngrese su opción perro hp: "))
 
 
@@ -43,11 +45,25 @@ while (operador_computador != 4):
     else:
 
         if operador_eleccion == 1 :
-            pass
+            if operador_computador == 3:
+                print(f"Felicidades tu sacaste {eleccion} y la maquina saco {computador}. ¡Tu ganas!")
+                break
+            else:
+                print(f"Lo siento tu sacaste {eleccion} y la maquina saco {computador}. ¡Perdiste!")
+                break
         elif operador_eleccion == 2:
-            pass
+            if operador_computador == 1:
+                print(f"Felicidades tu sacaste {eleccion} y la maquina saco {computador}. ¡Tu ganas!")
+                break
+            else:
+                print(f"Lo siento tu sacaste {eleccion} y la maquina saco {computador}. ¡Perdiste!")
+                break
         else:
-            pass
-print(computador)
+            if operador_computador == 2:
+                print(f"Felicidades tu sacaste {eleccion} y la maquina saco {computador}. ¡Tu ganas!")
+                break
+            else:
+                print(f"Lo siento tu sacaste {eleccion} y la maquina saco {computador}. ¡Perdiste!")
+                break
 
 
