@@ -1,3 +1,6 @@
+import os
+os.system("cls")
+
 def es_primo (numero):
     contador = 0
 

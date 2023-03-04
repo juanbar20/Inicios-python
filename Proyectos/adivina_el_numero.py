@@ -3,7 +3,7 @@ os.system("cls")
 
 import random
 
-numero = random.randint(1, 100)
+"""numero = random.randint(1, 100)
 intentos = 5
 
 while(intentos > 0):
@@ -18,4 +18,18 @@ while(intentos > 0):
         print("Ganaste")
         break
 
-print("Se acabaron los intentos")
+print("Se acabaron los intentos")"""
+
+
+def run ():
+    numero_aleatorio = random.randint(1,100)
+    numero_elegido = int(input("Elige un numero del 1 al 100"))
+    while numero_elegido != numero_aleatorio:
+        pass
+    print("Ganaste")
+
+
+
+
+if __name__ == "__main__":
+    run()
